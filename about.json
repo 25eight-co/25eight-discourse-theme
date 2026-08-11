@@ -1,0 +1,21 @@
+{
+  "name": "25eight",
+  "about_url": "https://www.25eight.co",
+  "license_url": null,
+  "authors": "25eight",
+  "theme_version": "1.0.0",
+  "color_schemes": {
+    "25eight": {
+      "primary": "1F2D45",
+      "secondary": "FFFFFF",
+      "tertiary": "091C3B",
+      "quaternary": "DD1A6D",
+      "header_background": "FFFFFF",
+      "header_primary": "091C3B",
+      "highlight": "F3C9D8",
+      "danger": "FA8111",
+      "success": "12305C",
+      "love": "DD1A6D"
+    }
+  }
+}

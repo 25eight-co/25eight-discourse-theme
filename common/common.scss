@@ -1,0 +1,151 @@
+// 25eight Discourse theme — implements Brand Guidelines v2.0 (July 2026).
+// 75% white, navy structure, pink moments. Poppins display, Karla body.
+// Pills 999px, cards 26px, inputs 18px. Red and gradients retired.
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Karla:wght@400;500;700&display=swap");
+
+:root {
+  --e8-navy: #091c3b;
+  --e8-navy-2: #12305c;
+  --e8-pink: #dd1a6d;
+  --e8-ink: #1f2d45;
+  --e8-mute: #5e6e85;
+  --e8-grey: #c3c3c3;
+  --e8-wash: #f5f7fa;
+  --e8-line: #e2e8f0;
+  --e8-purple: #762c82;
+  --e8-orange: #fa8111;
+  --e8-lightpink: #ffa6de;
+  --e8-babyblue: #5fe6ff;
+  --e8-display: "Poppins", system-ui, sans-serif;
+  --e8-body: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+// ---- Type -------------------------------------------------------------
+html,
+body {
+  font-family: var(--e8-body);
+  color: var(--e8-ink);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.d-header .title,
+.topic-list .link-top-line,
+.fancy-title,
+.category-name,
+.sidebar-section-header,
+.modal-inner-container .title,
+#topic-title h1 {
+  font-family: var(--e8-display);
+  font-weight: 600;
+  color: var(--e8-navy);
+}
+
+// Reading should feel effortless: generous leading, restrained measure.
+.cooked {
+  line-height: 1.7;
+  p {
+    max-width: 42em; // ~65 characters in Karla
+  }
+}
+
+// ---- Header -----------------------------------------------------------
+.d-header {
+  border-bottom: 1px solid var(--e8-line);
+  box-shadow: none;
+}
+
+// ---- Buttons: pills, navy default, pink reserved for the key action ---
+.btn,
+.btn-default,
+.btn-primary,
+.sign-up-button,
+.login-button {
+  border-radius: 999px;
+  font-family: var(--e8-display);
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: var(--e8-navy);
+  &:hover,
+  &:focus {
+    background: var(--e8-navy-2);
+  }
+}
+
+// The one pink moment in the chrome: joining the conversation.
+.d-header .sign-up-button,
+#create-topic {
+  background: var(--e8-pink);
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    background: #b8155a;
+  }
+}
+
+// ---- Inputs and surfaces ---------------------------------------------
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+.select-kit-header {
+  border-radius: 18px;
+  border-color: var(--e8-line);
+}
+
+.modal-inner-container,
+.card-content,
+.user-card,
+.group-card,
+.d-editor-preview-wrapper,
+.category-box,
+.latest-topic-list-item {
+  border-radius: 26px;
+}
+
+// Alternating calm: wash for quiet zones, never dark blocks.
+.alert,
+.consent_banner,
+.bootbox.modal {
+  background: var(--e8-wash);
+  color: var(--e8-ink);
+  border: 1px solid var(--e8-line);
+  border-radius: 18px;
+}
+
+// ---- Details ---------------------------------------------------------
+// Rules and dividers are grey; grey is never text.
+hr,
+.topic-list-item,
+.topic-list th,
+.topic-list td {
+  border-color: var(--e8-line);
+}
+
+// Category badges keep their per-category (domain) colours; square-ish chip.
+.badge-category__wrapper .badge-category {
+  border-radius: 6px;
+  font-family: var(--e8-display);
+  font-weight: 500;
+}
+
+// Navigation pills.
+.nav-pills > li > a {
+  border-radius: 999px;
+  font-family: var(--e8-display);
+  font-weight: 500;
+}
+
+// Muted metadata stays legible, never grey-on-white body text.
+.topic-list .num,
+.topic-meta-data,
+.post-info {
+  color: var(--e8-mute);
+}
