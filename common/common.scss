@@ -149,3 +149,38 @@ hr,
 .post-info {
   color: var(--e8-mute);
 }
+
+// ---- Feed thumbnail placeholders: the hex speech bubble ---------------
+// Topic List Thumbnails shows a stock icon where a topic has no image;
+// replace it with the 25eight hex speech bubble (canonical pointy-top
+// hexagon + tail), solid in the domain colour on a 10% tint tile (Sam
+// approved the solid single-colour set, 16 Nov 2026). Navy is the default
+// for every other category. Row classes chain parent-child slugs, so each
+// domain is matched both as a CEO Circle subcategory (today's tree) and
+// top-level (if ever re-parented).
+.topic-list-item .thumbnail-placeholder {
+  background: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%23091C3B%22 opacity=%220.10%22/%3E%3Cpath d=%22M64 70 L52 102 L76 77 Z%22 fill=%22%23091C3B%22 stroke=%22%23091C3B%22 stroke-width=%229%22 stroke-linejoin=%22round%22/%3E%3Cg transform=%22translate(43,6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%23091C3B%22 stroke=%22%23091C3B%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+  svg {
+    display: none;
+  }
+}
+.topic-list-item.category-human .thumbnail-placeholder,
+.topic-list-item.category-ceo-circle-human .thumbnail-placeholder {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%23DD1A6D%22 opacity=%220.10%22/%3E%3Cpath d=%22M64 70 L52 102 L76 77 Z%22 fill=%22%23DD1A6D%22 stroke=%22%23DD1A6D%22 stroke-width=%229%22 stroke-linejoin=%22round%22/%3E%3Cg transform=%22translate(43,6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%23DD1A6D%22 stroke=%22%23DD1A6D%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
+.topic-list-item.category-leadership .thumbnail-placeholder,
+.topic-list-item.category-ceo-circle-leadership .thumbnail-placeholder {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%23762C82%22 opacity=%220.10%22/%3E%3Cpath d=%22M64 70 L52 102 L76 77 Z%22 fill=%22%23762C82%22 stroke=%22%23762C82%22 stroke-width=%229%22 stroke-linejoin=%22round%22/%3E%3Cg transform=%22translate(43,6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%23762C82%22 stroke=%22%23762C82%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
+.topic-list-item.category-community .thumbnail-placeholder,
+.topic-list-item.category-ceo-circle-community .thumbnail-placeholder {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%23FFA6DE%22 opacity=%220.10%22/%3E%3Cpath d=%22M64 70 L52 102 L76 77 Z%22 fill=%22%23FFA6DE%22 stroke=%22%23FFA6DE%22 stroke-width=%229%22 stroke-linejoin=%22round%22/%3E%3Cg transform=%22translate(43,6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%23FFA6DE%22 stroke=%22%23FFA6DE%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
+.topic-list-item.category-capacity .thumbnail-placeholder,
+.topic-list-item.category-ceo-circle-capacity .thumbnail-placeholder {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%23FA8111%22 opacity=%220.10%22/%3E%3Cpath d=%22M64 70 L52 102 L76 77 Z%22 fill=%22%23FA8111%22 stroke=%22%23FA8111%22 stroke-width=%229%22 stroke-linejoin=%22round%22/%3E%3Cg transform=%22translate(43,6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%23FA8111%22 stroke=%22%23FA8111%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
+.topic-list-item.category-digital-ai .thumbnail-placeholder,
+.topic-list-item.category-ceo-circle-digital-ai .thumbnail-placeholder {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%235FE6FF%22 opacity=%220.10%22/%3E%3Cpath d=%22M64 70 L52 102 L76 77 Z%22 fill=%22%235FE6FF%22 stroke=%22%235FE6FF%22 stroke-width=%229%22 stroke-linejoin=%22round%22/%3E%3Cg transform=%22translate(43,6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%235FE6FF%22 stroke=%22%235FE6FF%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
