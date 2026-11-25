@@ -184,3 +184,38 @@ hr,
 .topic-list-item.category-ceo-circle-digital-ai .thumbnail-placeholder {
   background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%235FE6FF%22 opacity=%220.10%22/%3E%3Cpath d=%22M64 70 L52 102 L76 77 Z%22 fill=%22%235FE6FF%22 stroke=%22%235FE6FF%22 stroke-width=%229%22 stroke-linejoin=%22round%22/%3E%3Cg transform=%22translate(43,6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%235FE6FF%22 stroke=%22%235FE6FF%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
 }
+
+// ---- Practical-action video topics: the hex play badge ---------------
+// Rows tagged practical-actions are videos (the weekly podcast practical
+// action), so the placeholder swaps the speech bubble for the same hexagon
+// with a play triangle. White triangle, except navy on the two light fills
+// (community pink, digital-ai blue) per the brand contrast rule. Navy badge
+// is the default for any other category; tag+category outranks the bubble
+// rules on specificity.
+.topic-list-item.tag-practical-actions .thumbnail-placeholder {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%23091C3B%22 opacity=%220.10%22/%3E%3Cg transform=%22translate(41.5,15.6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%23091C3B%22 stroke=%22%23091C3B%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3Cpolygon points=%2240,38 40,82 76,60%22 fill=%22%23FFFFFF%22 stroke=%22%23FFFFFF%22 stroke-width=%228%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
+.topic-list-item.category-human.tag-practical-actions .thumbnail-placeholder,
+.topic-list-item.category-ceo-circle-human.tag-practical-actions .thumbnail-placeholder {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%23DD1A6D%22 opacity=%220.10%22/%3E%3Cg transform=%22translate(41.5,15.6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%23DD1A6D%22 stroke=%22%23DD1A6D%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3Cpolygon points=%2240,38 40,82 76,60%22 fill=%22%23FFFFFF%22 stroke=%22%23FFFFFF%22 stroke-width=%228%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
+.topic-list-item.category-leadership.tag-practical-actions .thumbnail-placeholder,
+.topic-list-item.category-ceo-circle-leadership.tag-practical-actions .thumbnail-placeholder {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%23762C82%22 opacity=%220.10%22/%3E%3Cg transform=%22translate(41.5,15.6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%23762C82%22 stroke=%22%23762C82%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3Cpolygon points=%2240,38 40,82 76,60%22 fill=%22%23FFFFFF%22 stroke=%22%23FFFFFF%22 stroke-width=%228%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
+.topic-list-item.category-business.tag-practical-actions .thumbnail-placeholder,
+.topic-list-item.category-ceo-circle-business.tag-practical-actions .thumbnail-placeholder {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%23091C3B%22 opacity=%220.10%22/%3E%3Cg transform=%22translate(41.5,15.6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%23091C3B%22 stroke=%22%23091C3B%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3Cpolygon points=%2240,38 40,82 76,60%22 fill=%22%23FFFFFF%22 stroke=%22%23FFFFFF%22 stroke-width=%228%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
+.topic-list-item.category-community.tag-practical-actions .thumbnail-placeholder,
+.topic-list-item.category-ceo-circle-community.tag-practical-actions .thumbnail-placeholder {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%23FFA6DE%22 opacity=%220.10%22/%3E%3Cg transform=%22translate(41.5,15.6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%23FFA6DE%22 stroke=%22%23FFA6DE%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3Cpolygon points=%2240,38 40,82 76,60%22 fill=%22%23091C3B%22 stroke=%22%23091C3B%22 stroke-width=%228%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
+.topic-list-item.category-capacity.tag-practical-actions .thumbnail-placeholder,
+.topic-list-item.category-ceo-circle-capacity.tag-practical-actions .thumbnail-placeholder {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%23FA8111%22 opacity=%220.10%22/%3E%3Cg transform=%22translate(41.5,15.6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%23FA8111%22 stroke=%22%23FA8111%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3Cpolygon points=%2240,38 40,82 76,60%22 fill=%22%23FFFFFF%22 stroke=%22%23FFFFFF%22 stroke-width=%228%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
+.topic-list-item.category-digital-ai.tag-practical-actions .thumbnail-placeholder,
+.topic-list-item.category-ceo-circle-digital-ai.tag-practical-actions .thumbnail-placeholder {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 160 120%22%3E%3Crect width=%22160%22 height=%22120%22 rx=%2210%22 fill=%22%235FE6FF%22 opacity=%220.10%22/%3E%3Cg transform=%22translate(41.5,15.6) scale(0.74)%22%3E%3Cpolygon points=%2251.96,10.97 94.42,35.49 94.42,84.51 51.96,109.03 9.5,84.51 9.5,35.49%22 fill=%22%235FE6FF%22 stroke=%22%235FE6FF%22 stroke-width=%2216%22 stroke-linejoin=%22round%22/%3E%3Cpolygon points=%2240,38 40,82 76,60%22 fill=%22%23091C3B%22 stroke=%22%23091C3B%22 stroke-width=%228%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
